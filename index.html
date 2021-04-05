@@ -16,6 +16,7 @@
     </head>
 
     <body>
+        <!-- LOGIN SCREEN -->
         <div class="container justify-content-center" id="pageLogin">
             <div class="row justify-content-center" style="margin-top:10%;">
                 <div class="col-md-4 text-center">
@@ -37,8 +38,9 @@
                 </div>
             </div>
         </div>
+        
 
-
+        <!-- SPLASH SCREEN -->
         <div class="container justify-content-center" id="pageSplash" style="display:none;">
             <div class="row justify-content-center" style="margin-top:10%;margin-bottom:5%;">
                 <div class="col-md-4 text-center">
@@ -60,6 +62,13 @@
     </body>
 
     <script>
+        /**
+         * 
+         * Login Screen
+         * 
+         */
+
+        // Event Listener for login functionality
         document.getElementById("login").addEventListener("click", function(e) {
             if(document.getElementById("username").value == "admin"){
                 if(document.getElementById("password").value == "password"){
@@ -75,10 +84,18 @@
             }
         });
 
+        /**
+         * 
+         * Splash Screen
+         * 
+         */
+
+        // Event Listener for borrower functionality
         document.getElementById("borrower").addEventListener("click", function(e) {
             document.getElementById("pageSplash").style = "display:none;";
         });
 
+        // Event Listener for lender functionality
         document.getElementById("lender").addEventListener("click", function(e) {
             document.getElementById("pageSplash").style = "display:none;";
         });
