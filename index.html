@@ -13,9 +13,16 @@
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ICONS CAN BE FOUND AT: -->
+    <!-- https://fonts.google.com/icons?selected=Material+Icons -->
+
     </head>
 
     <body>
+        <!-- IMPORTANT!!! PLEASE HAVE EACH SCREEN START WITH A CLASS OF "container justify-content-center" TO HAVE BUTTONS WORK-->
+
         <!-- LOGIN SCREEN -->
         <div class="container justify-content-center" id="pageLogin">
             <div class="row justify-content-center" style="margin-top:10%;">
@@ -58,10 +65,99 @@
                     <h1>LENDER</h1>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
+                        <span class="material-icons">account_circle</span>
+                    </button>
+                </div>
+            </div>
         </div>
+
+        <!-- USER PROFILE SCREEN -->
+        <div class="container justify-content-center" id="pageUser" style="display:none;">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="fullname">Name:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="fullname" aria-describedby="fullname">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="email">Email:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="location">Location:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="location" aria-describedby="location">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="password1">Password:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password1" aria-describedby="password1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="password2">Re-enter Password:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password2" aria-describedby="password2">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="phoneNumber">Phone Number:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="phoneNumber" aria-describedby="phoneNumber">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveButton">
+                        <span class="material-icons">check</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </body>
 
     <script>
+         /**
+         *
+         * General Functionality
+         *
+         */
+        var previousContainer;
+
+        // Event Listener for profile button
+        document.getElementById("userButton").addEventListener("click", function(e) {
+            previousContainer = e.originalTarget;
+            while(previousContainer.className != "container justify-content-center"){
+                previousContainer = previousContainer.parentElement;
+            }
+            previousContainer.style="display:none;";
+            document.getElementById("pageUser").style="";
+        });
+
+        // Event Listener for back button
+        document.getElementById("backButton").addEventListener("click", function(e) {
+            ourContainer = e.originalTarget;
+            while(ourContainer.className != "container justify-content-center"){
+                ourContainer = ourContainer.parentElement;
+            }
+            ourContainer.style="display:none;"
+            previousContainer.style="";
+        });
+
         /**
          * 
          * Login Screen
@@ -99,6 +195,26 @@
         document.getElementById("lender").addEventListener("click", function(e) {
             document.getElementById("pageSplash").style = "display:none;";
         });
+
+        /**
+         *
+         * User Profile Screen
+         *
+         */
+
+        // Event Listener for save button
+        document.getElementById("saveButton").addEventListener("click", function(e) {
+            // This would update user's profile data
+            ourRow = e.originalTarget.parentElement;
+            ourRow.style="background-color:green;"
+            setTimeout(() => {
+                ourRow.style="";
+                ourRow.querySelector("#backButton").click();
+            }, 500);
+            console.log("User data /'saved/'");
+            console.log("Low-key user data is currently not implenented :)")
+        });
+
     </script>
 
 </html>
