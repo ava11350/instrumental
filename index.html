@@ -161,7 +161,7 @@
             </div>
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonLend">
                         <span class="material-icons">arrow_back</span>
                     </button>
                     <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
@@ -271,6 +271,11 @@
             }, 600);
             console.log("User data 'saved'");
             console.log("Low-key user data is currently not implenented :)")
+        });
+
+        document.getElementById("backButtonLend").addEventListener("click", function(e) {
+            document.getElementById("pageLender").style = "display:none;";
+            document.getElementById("pageSplash").style = "";
         });
 
     </script>
