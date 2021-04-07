@@ -70,6 +70,9 @@
                     <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                        <span class="material-icons">message</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -128,6 +131,49 @@
             </div>
         </div>
 
+        <!-- LENDER SCREEN -->
+        <div class="container justify-content-center" id="pageLender" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:10%;">
+                <div class="col-md-4 text-center">
+                    <h2 style="margin-bottom:20px;"><u>Your Instruments</u></h2>
+                    <!-- ROW FOR INSTRUMENT ENTRY -->
+                    <div class="row text-left" style="background-color:gray; margin-top:3px;">
+                        <div class="justify-content-start">
+                            <img src="guitar.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
+                        </div>
+                        <div col class="text-left" style="margin-left:4px;">
+                            <span>Guitar 1</span></br>
+                            <span>$25/hr</span>
+                        </div>
+                    </div>
+
+                    <div class="row text-;eft" style="background-color:gray; margin-top:3px;">
+                        <div class="justify-content-start">
+                            <img src="drumset.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
+                        </div>
+                        <div col class="text-left" style="margin-left:4px;">
+                            <span>Drumset 1</span></br>
+                            <span>$40/hr</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
+                        <span class="material-icons">account_circle</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                        <span class="material-icons">message</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </body>
 
     <script>
@@ -139,24 +185,31 @@
         var previousContainer;
 
         // Event Listener for profile button
-        document.getElementById("userButton").addEventListener("click", function(e) {
-            previousContainer = e.originalTarget;
-            while(previousContainer.className != "container justify-content-center"){
-                previousContainer = previousContainer.parentElement;
-            }
-            previousContainer.style="display:none;";
-            document.getElementById("pageUser").style="";
-        });
+        userButtons = document.querySelectorAll("#userButton");
+        userButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                previousContainer = e.originalTarget;
+                while(previousContainer.className != "container justify-content-center"){
+                    previousContainer = previousContainer.parentElement;
+                }
+                previousContainer.style="display:none;";
+                document.getElementById("pageUser").style="";
+            });
+        })
 
         // Event Listener for back button
-        document.getElementById("backButton").addEventListener("click", function(e) {
-            ourContainer = e.originalTarget;
-            while(ourContainer.className != "container justify-content-center"){
-                ourContainer = ourContainer.parentElement;
-            }
-            ourContainer.style="display:none;"
-            previousContainer.style="";
-        });
+        backButtons = document.querySelectorAll("#backButton")
+        backButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                ourContainer = e.originalTarget;
+                while(ourContainer.className != "container justify-content-center"){
+                    ourContainer = ourContainer.parentElement;
+                }
+                ourContainer.style="display:none;"
+                previousContainer.style="";
+            });
+        })
+        
 
         /**
          * 
@@ -193,7 +246,9 @@
 
         // Event Listener for lender functionality
         document.getElementById("lender").addEventListener("click", function(e) {
+            previousContainer = document.getElementById("pageSplash");
             document.getElementById("pageSplash").style = "display:none;";
+            document.getElementById("pageLender").style = "";
         });
 
         /**
