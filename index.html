@@ -168,6 +168,11 @@
 
                 </div>
             </div>
+            <div class="row justify-content-center" style="padding:20px;">
+                <div class="col-md-4 text-center" style="background-color:orange;" id="addInstruments">
+                    <h1>Add Instrument</h1>
+                </div>
+            </div>
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
                     <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
@@ -180,6 +185,67 @@
             </div>
         </div>
 
+        <!-- ADD AN INSTRUMENT SCREEN -->
+        <div class="container justify-content-center" id="pageAdd" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5%;">
+                <div class="col-md-4 text-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Browse locally to add image" aria-label="instrumentSearch" aria-describedby="browseImage">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="browseImageButton">
+                                <span class="material-icons">
+				     add_a_photo    
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="typea">Type:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="fullname" aria-describedby="fullname">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="rangea">Price Range: $</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="fill_ina">to $</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="branda">Brand:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="location" aria-describedby="location">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="weighta">Weight:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password2" aria-describedby="password2">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="othera">Other:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password1" aria-describedby="password1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtona">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveFilterButtona">
+                        <span class="material-icons">check</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <!-- BORROWER SCREEN -->
         <div class="container justify-content-center" id="pageBorrower" style="display:none;">
@@ -197,13 +263,18 @@
                                 </span>
                             </button>
                         </div>
+                        <button class="btn btn-primary" style="background-color:lightgray; margin-right: 10px;" id="filterButtonBorrow">
+                            <span class="material-icons">grading</span>
+                        </button>
                       </div>
                     <div class="row">
                         <div class="col" style="border: 1px solid gray;" id="sitar">
                             <span class="border border-primary">
                                 <div class="justify-content-center">
                                     <p>Sitar</p>
+				    
                                     <img src="sitar.jpg" alt="Sitar" class="mx-auto d-block">
+			            
                                     <p>$50/hr</p>
                                 </div>
                             </span>
@@ -212,7 +283,9 @@
                             <span class="border border-primary">
                                 <div class="justify-content-start">
                                     <p class="">Grand Piano</p>
+                                    
                                     <img src="grand_piano.jpg" alt="Grand Piano" class="mx-auto d-block">
+                                    
                                     <p>$199/hr</p>
                                 </div>
                             </span>
@@ -223,7 +296,9 @@
                             <span class="border border-primary">
                                 <div class="justify-content-center">
                                     <p>Drumset</p>
+                                    
                                     <img src="pearl_drumset.jpg" alt="Pearl Drumset" class="mx-auto d-block">
+                                    
                                     <p>$99/hr</p>
                                 </div>
                             </span>
@@ -232,7 +307,9 @@
                             <span class="border border-primary">
                                 <div class="justify-content-center">
                                     <p>Orange Amp</p>
+                                    
                                     <img src="orange_amp.jpg" alt="Orange Amplifier" class="mx-auto d-block">
+                                    
                                     <p>$25/hr</p>
                                 </div>
                             </span>
@@ -241,7 +318,9 @@
                             <span class="border border-primary">
                                 <div class="justify-content-center">
                                     <p>Clarinet</p>
+                                    
                                     <img src="clarinet.jpg" alt="Clarinet" class="mx-auto d-block">
+                                    
                                     <p>$47/hr</p>
                                 </div>
                             </span>
@@ -263,6 +342,152 @@
                     <button class="btn btn-primary" style="background-color:lightgray;" id="chatHistoryButton">
                         <span class="material-icons">chat</span>
                     </button>
+                </div>
+            </div>
+        </div>
+
+	<!-- INDIVIDUAL LISTING SCREENS -->
+        <div class="container justify-content-center" id="sitarinfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="content">
+                    <div class="padding">
+                        <div class="container">
+                            <div class="row justify-content-center" style="margin-top:5px;">
+                                <div class="col-lg-4">
+                                    <div class="text-center card-box">
+                                        <div class="member-card pt-2 pb-2">
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="sitar.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div>
+                                                <h2>Ronaldo</h2>
+                                                <p>Sitar</p>
+                                                <p>Expects $50/hr</p>
+                                                <p>Location: New York</p>
+                                                <p>Available for Pickup</p>
+                                                <p>Not negotiable</p>
+                                            </div>
+                                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="messageNow">Message Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	<div class="container justify-content-center" id="pianoinfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="content">
+                    <div class="padding">
+                        <div class="container">
+                            <div class="row justify-content-center" style="margin-top:5px;">
+                                <div class="col-lg-4">
+                                    <div class="text-center card-box">
+                                        <div class="member-card pt-2 pb-2">
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="grand_piano.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div>
+                                                <h2>Randaldo</h2>
+                                                <p>Grand Piano</p>
+                                                <p>Expects $199/hr</p>
+                                                <p>Location: New York</p>
+                                                <p>Available for Pickup</p>
+                                                <p>Not negotiable</p>
+                                            </div>
+                                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="messageNow">Message Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center" id="druminfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="content">
+                    <div class="padding">
+                        <div class="container">
+                            <div class="row justify-content-center" style="margin-top:5px;">
+                                <div class="col-lg-4">
+                                    <div class="text-center card-box">
+                                        <div class="member-card pt-2 pb-2">
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="pearl_drumset.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div>
+                                                <h2>Randaldo</h2>
+                                                <p>Drumset</p>
+                                                <p>Expects $99/hr</p>
+                                                <p>Location: New York</p>
+                                                <p>Available for Pickup</p>
+                                                <p>Not negotiable</p>
+                                            </div>
+                                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="messageNow">Message Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center" id="ampinfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="content">
+                    <div class="padding">
+                        <div class="container">
+                            <div class="row justify-content-center" style="margin-top:5px;">
+                                <div class="col-lg-4">
+                                    <div class="text-center card-box">
+                                        <div class="member-card pt-2 pb-2">
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="orange_amp.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div>
+                                                <h2>Randaldo</h2>
+                                                <p>Orange Amp</p>
+                                                <p>Expects $25/hr</p>
+                                                <p>Location: New York</p>
+                                                <p>Available for Pickup</p>
+                                                <p>Not negotiable</p>
+                                            </div>
+                                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="messageNow">Message Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center" id="clarinetinfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="content">
+                    <div class="padding">
+                        <div class="container">
+                            <div class="row justify-content-center" style="margin-top:5px;">
+                                <div class="col-lg-4">
+                                    <div class="text-center card-box">
+                                        <div class="member-card pt-2 pb-2">
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="clarinet.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div>
+                                                <h2>Randaldo</h2>
+                                                <p>Clarinet</p>
+                                                <p>Expects $47/hr</p>
+                                                <p>Location: New York</p>
+                                                <p>Available for Pickup</p>
+                                                <p>Not negotiable</p>
+                                            </div>
+                                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="messageNow">Message Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -290,6 +515,61 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+	<!-- SEARCH FILTER SCREEN -->
+        <div class="container justify-content-center" id="pageFilter" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5%;">
+                <div class="col-md-4 text-center">
+                    <div class="input-group mb-3">
+                        <h2> SEARCH FILTER </h2>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="typef">Type:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="fullname" aria-describedby="fullname">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="rangef">Price Range: $</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="fill_inf">to $</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="brandf">Brand:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="location" aria-describedby="location">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="locationf">Location:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password1" aria-describedby="password1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="weightf">Weight:</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="password2" aria-describedby="password2">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonf">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveFilterButton">
+                        <span class="material-icons">check</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -629,6 +909,11 @@
             document.getElementById("pageMap").style = "";
         });
 
+        document.getElementById("filterButtonBorrow").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("pageFilter").style = "";
+        });
+
 
          /**
          *
@@ -638,6 +923,11 @@
 
         document.getElementById("messageNow").addEventListener("click", function(e) {
             document.getElementById("pageListingProfile").style = "display:none;";
+            document.getElementById("sitarinfo").style = "display:none;";
+            document.getElementById("pianoinfo").style = "display:none;";
+	    document.getElementById("druminfo").style = "display:none;";
+	    document.getElementById("clarinetinfo").style = "display:none;";
+            document.getElementById("ampinfo").style = "display:none;";
             document.getElementById("pageChat").style = "";
         });
 
@@ -685,6 +975,80 @@
             document.getElementById("pageMap").style = "display:none;";
             document.getElementById("pageSplash").style = "";
         });
+
+        /**
+         * 
+         * Individual listings
+         * 
+         */
+        document.getElementById("sitar").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("sitarinfo").style = "";
+        });
+
+        document.getElementById("pearlDrumset").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("druminfo").style = "";
+        });
+
+        document.getElementById("grandPiano").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("pianoinfo").style = "";
+        });
+
+        document.getElementById("clarinet").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("clarinetinfo").style = "";
+        });
+   
+        document.getElementById("orangeAmp").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("ampinfo").style = "";
+        });
+  
+
+        /**
+         * 
+         * Search filter
+         * 
+         */
+        document.getElementById("backButtonf").addEventListener("click", function(e) {
+            document.getElementById("pageFilter").style = "display:none;";
+            document.getElementById("pageBorrower").style = "";
+        });
+
+        document.getElementById("saveFilterButton").addEventListener("click", function(e) {
+            document.getElementById("pageFilter").style = "display:none;";
+            document.getElementById("pageBorrower").style = "";
+        });	
+
+
+        /**
+         * 
+         * Lender Screen
+         * 
+         */
+        document.getElementById("addInstruments").addEventListener("click", function(e) {
+            document.getElementById("pageLender").style = "display:none;";
+            document.getElementById("pageAdd").style = "";
+        });
+
+
+        /**
+         * 
+         * Add instrument
+         * 
+         */
+        document.getElementById("backButtona").addEventListener("click", function(e) {
+            document.getElementById("pageLender").style = "";
+            document.getElementById("pageAdd").style = "display:none;";
+        });
+
+        document.getElementById("saveFilterButtona").addEventListener("click", function(e) {
+            document.getElementById("pageLender").style = "";
+            document.getElementById("pageAdd").style = "display:none;";
+        });
+        
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1bDO_Nb-qpRr3CPQpTQqLCYxZpkUwRuE&callback=myMap"></script>
