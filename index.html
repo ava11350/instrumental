@@ -480,8 +480,6 @@
                                         </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -561,7 +559,6 @@
             previousContainer = document.getElementById("pageSplash");
             document.getElementById("pageSplash").style = "display:none;";
             document.getElementById('pageBorrower').style = "";
-            document.getElementById("pageMap").style = "";
         });
 
         // Event Listener for lender functionality
@@ -625,6 +622,11 @@
         document.getElementById("chatHistoryButton").addEventListener("click", function(e) {
             document.getElementById("pageBorrower").style = "display:none;";
             document.getElementById("pageChatHistory").style = "";
+        });
+
+        document.getElementById("mapButton").addEventListener("click", function(e) {
+            document.getElementById("pageBorrower").style = "display:none;";
+            document.getElementById("pageMap").style = "";
         });
 
 
