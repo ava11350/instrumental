@@ -4,6 +4,30 @@
     text-align: center;
 }
 
+#borrower{
+    background-color:cornflowerblue;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#lender{
+    background-color:crimson;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#addInstruments{
+    background-color:orange;
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .card-bordered {
     border: 1px solid #ebebeb
 }

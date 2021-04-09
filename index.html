@@ -58,21 +58,23 @@
                 </div>
             </div>
             <div class="row justify-content-center" style="padding:20px;">
-                <div class="col-md-4 text-center" style="background-color:cornflowerblue;" id="borrower">
+                <div class="col-md-4 text-center" id="borrower">
                     <h1>BORROWER</h1>
                 </div>
             </div>
             <div class="row justify-content-center" style="padding:20px;">
-                <div class="col-md-4 text-center" style="background-color:crimson;" id="lender">
+                <div class="col-md-4 text-center" id="lender">
                     <h1>LENDER</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" style="background-color:gray;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                </div>
+                <div class="col-sm-2 justify-content-end" style="display:flex;">
+                    <button class="btn btn-primary" style="background-color:gray;" id="chatButton">
                         <span class="material-icons">message</span>
                     </button>
                 </div>
@@ -122,11 +124,13 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButton">
                         <span class="material-icons">arrow_back</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveButton">
+                </div>
+                <div class="col-sm-2 justify-content-end" style="display:flex;">
+                    <button class="btn btn-primary" style="background-color:gray;" id="saveButton">
                         <span class="material-icons">check</span>
                     </button>
                 </div>
@@ -137,7 +141,7 @@
         <div class="container justify-content-center" id="pageLender" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonLend">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonLend">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -169,16 +173,18 @@
                 </div>
             </div>
             <div class="row justify-content-center" style="padding:20px;">
-                <div class="col-md-4 text-center" style="background-color:orange;" id="addInstruments">
+                <div class="col-md-4 text-center" id="addInstruments">
                     <h1>Add Instrument</h1>
                 </div>
             </div>
             <div class="row justify-content-center" style="margin-top:5px;">
-                <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" style="background-color:gray;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                </div>
+                <div class="col-sm-2 justify-content-end" style="display:flex;">
+                    <button class="btn btn-primary" style="background-color:gray;" id="chatButton">
                         <span class="material-icons">message</span>
                     </button>
                 </div>
@@ -194,7 +200,7 @@
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="button" id="browseImageButton">
                                 <span class="material-icons">
-				     add_a_photo    
+				                    add_a_photo    
                                 </span>
                             </button>
                         </div>
@@ -209,7 +215,7 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="rangea">Price Range: $</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email" style="margin-right:2px;">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="fill_ina">to $</span>
                         </div>
@@ -236,11 +242,13 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtona">
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtona">
                         <span class="material-icons">arrow_back</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveFilterButtona">
+                </div>
+                <div class="col-sm=2 justify-content-end" style="display:flex;">
+                    <button class="btn btn-primary" style="background-color:gray;" id="saveFilterButtona">
                         <span class="material-icons">check</span>
                     </button>
                 </div>
@@ -251,22 +259,19 @@
         <div class="container justify-content-center" id="pageBorrower" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5%;">
                 <div class="col-md-4">
+
+                    <!-- TOP ROW -->
                     <div class="input-group mb-3" style="margin-right: 50%;">
-                        <button class="btn btn-primary" style="background-color:lightgray; margin-right: 10px;" id="backButtonBorrow">
+                        <button class="btn btn-primary" style="background-color: gray; margin-right: 10px;" id="backButtonBorrow">
                             <span class="material-icons">arrow_back</span>
                         </button>
-                        <input type="text" class="form-control" placeholder="Enter instrument" aria-label="instrumentSearch" aria-describedby="instrumentSearch">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="instrumentSearchButton">
-                                <span class="material-icons">
-                                    search
-                                </span>
-                            </button>
-                        </div>
-                        <button class="btn btn-primary" style="background-color:lightgray; margin-right: 10px;" id="filterButtonBorrow">
+                        <input type="text" class="form-control" style="margin-right: 10px;" placeholder="Enter instrument" aria-label="instrumentSearch" aria-describedby="instrumentSearch">
+                        <button class="btn btn-primary" style="background-color: gray; margin-right: 10px;" id="filterButtonBorrow">
                             <span class="material-icons">grading</span>
                         </button>
-                      </div>
+                    </div>      
+
+                    <!-- MIDDLE ROW -->
                     <div class="row">
                         <div class="col" style="border: 1px solid gray;" id="sitar">
                             <span class="border border-primary">
@@ -328,18 +333,20 @@
                     </div>
                 </div>
             </div>
+
+            <!-- BOTTOM ROW -->
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 50px;" id="userButton">
+                    <button class="btn btn-primary" style="background-color:gray; margin-right: 50px;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 5px;" id="mapButton">
+                    <button class="btn btn-primary" style="background-color:gray; margin-right: 5px;" id="mapButton">
                         <span class="material-icons">public</span>
                     </button>
                     <button class="btn btn-primary" style="background-color:lightgreen; margin-right: 45px;" id="listButton">
                         <span class="material-icons">list</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                    <button class="btn btn-primary" style="background-color:gray;" id="chatButton">
                         <span class="material-icons">chat</span>
                     </button>
                 </div>
@@ -350,7 +357,7 @@
         <div class="container justify-content-center" id="sitarinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonInstr">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -386,7 +393,7 @@
 	    <div class="container justify-content-center" id="pianoinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonInstr">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -422,7 +429,7 @@
         <div class="container justify-content-center" id="druminfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonInstr">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -458,7 +465,7 @@
         <div class="container justify-content-center" id="ampinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonInstr">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -494,7 +501,7 @@
         <div class="container justify-content-center" id="clarinetinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonInstr">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -571,7 +578,7 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="rangef">Price Range: $</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                        <input type="text" class="form-control" aria-label="email" aria-describedby="email" style="margin-right:2px;">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="fill_inf">to $</span>
                         </div>
@@ -598,11 +605,13 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonf">
+                <div class="col-sm-2">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonf">
                         <span class="material-icons">arrow_back</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="saveFilterButton">
+                </div>
+                <div class="col-sm-2 justify-content-end" style="display:flex;">
+                    <button class="btn btn-primary" style="background-color:gray;" id="saveFilterButton">
                         <span class="material-icons">check</span>
                     </button>
                 </div>
@@ -616,10 +625,10 @@
                     <div class="padding">
                         <div class="row container d-flex justify-content-center">
                             <div class="col-md-6">
-                                <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                                <button class="btn btn-primary" style="background-color:gray;" id="backButton">
                                     <span class="material-icons">arrow_back</span>
                                 </button>
-                                <button class="btn btn-primary" style="background-color:lightgray;" id="backToChatHistory">
+                                <button class="btn btn-primary" style="background-color:gray;" id="backToChatHistory">
                                     <span class="material-icons">history</span>
                                 </button>
                                 <div class="card card-bordered" style="background-color: rgb(250, 250, 250);">
@@ -686,7 +695,7 @@
         <div class="container justify-content-center" id="pageMap" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonMap">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonMap">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -698,16 +707,16 @@
             </div>
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 50px;" id="userButton">
+                    <button class="btn btn-primary" style="background-color:gray; margin-right: 50px;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
                     <button class="btn btn-primary" style="background-color:lightgreen; margin-right: 5px;" id="mapButton">
                         <span class="material-icons">public</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 45px;" id="listButton">
+                    <button class="btn btn-primary" style="background-color:gray; margin-right: 45px;" id="listButton">
                         <span class="material-icons">list</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
+                    <button class="btn btn-primary" style="background-color:gray;" id="chatButton">
                         <span class="material-icons">chat</span>
                     </button>
                 </div>
@@ -719,7 +728,7 @@
         <div class="container justify-content-center" id="pageChatHistory" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonChat">
+                    <button class="btn btn-primary" style="background-color:gray;" id="backButtonChat">
                         <span class="material-icons">arrow_back</span>
                     </button>
                 </div>
@@ -822,325 +831,7 @@
           
     </body>
 
-    <script>
-         /**
-         *
-         * General Functionality
-         *
-         */
-        var previousContainer;
-
-        // Event Listener for profile button
-        userButtons = document.querySelectorAll("#userButton");
-        userButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                previousContainer = e.originalTarget;
-                while(previousContainer.className != "container justify-content-center"){
-                    previousContainer = previousContainer.parentElement;
-                }
-                previousContainer.style="display:none;";
-                document.getElementById("pageUser").style="";
-            });
-        })
-
-        // Event Listener for back button
-        backButtons = document.querySelectorAll("#backButton")
-        backButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                ourContainer = e.originalTarget;
-                while(ourContainer.className != "container justify-content-center"){
-                    ourContainer = ourContainer.parentElement;
-                }
-                ourContainer.style="display:none;"
-                previousContainer.style="";
-            });
-        })
-        
-
-        /**
-         * 
-         * Login Screen
-         * 
-         */
-
-        // Event Listener for login functionality
-        document.getElementById("login").addEventListener("click", function(e) {
-            if(document.getElementById("username").value == "admin"){
-                if(document.getElementById("password").value == "password"){
-                    document.getElementById("pageLogin").style = "display:none;";
-                    document.getElementById("pageSplash").style = "";
-                }else{
-                    document.getElementById("username").value = ""
-                    document.getElementById("password").value = ""
-                }
-            }else{
-                document.getElementById("username").value = ""
-                document.getElementById("password").value = ""
-            }
-        });
-
-        /**
-         * 
-         * Splash Screen
-         * 
-         */
-
-        // Event Listener for borrower functionality
-        document.getElementById("borrower").addEventListener("click", function(e) {
-            previousContainer = document.getElementById("pageSplash");
-            document.getElementById("pageSplash").style = "display:none;";
-            document.getElementById('pageBorrower').style = "";
-        });
-
-        // Event Listener for lender functionality
-        document.getElementById("lender").addEventListener("click", function(e) {
-            previousContainer = document.getElementById("pageSplash");
-            document.getElementById("pageSplash").style = "display:none;";
-            document.getElementById("pageLender").style = "";
-        });
-
-        // Event Listener for chat history
-        chatButtons = document.querySelectorAll("#chatButton");
-        chatButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                previousContainer = e.originalTarget;
-                while(previousContainer.className != "container justify-content-center"){
-                    previousContainer = previousContainer.parentElement;
-                }
-                previousContainer.style="display:none;";
-                document.getElementById("pageChatHistory").style="";
-            });
-        });
-
-
-        /**
-         *
-         * User Profile Screen
-         *
-         */
-
-        // Event Listener for save button
-        document.getElementById("saveButton").addEventListener("click", function(e) {
-            // This would update user's profile data
-            ourRow = e.originalTarget;
-            if(ourRow.localName == "span"){
-                ourRow = ourRow.parentNode;
-            }
-            ourRow.style="background-color:green;"
-            setTimeout(() => {
-                ourRow.style="background-color:lightgray;";
-                ourRow.parentNode.querySelector("#backButton").click();
-            }, 600);
-            console.log("User data 'saved'");
-            console.log("Low-key user data is currently not implenented :)")
-        });
-
-        document.getElementById("backButtonLend").addEventListener("click", function(e) {
-            document.getElementById("pageLender").style = "display:none;";
-            document.getElementById("pageSplash").style = "";
-        });
-
-
-
-        /**
-         *
-         * Borrower Screen
-         *
-         */
-         document.getElementById("backButtonBorrow").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pageSplash").style = "";
-        });
-
-        /**document.getElementById("profileButton").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pageListingProfile").style = "";
-        });*/
-
-        /**document.getElementById("chatHistoryButton").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pageChatHistory").style = "";
-        });*/
-
-        mapButtons = document.querySelectorAll("#mapButton");
-        mapButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                document.getElementById("pageBorrower").style = "display:none;";
-                document.getElementById("pageMap").style = "";
-            });
-        });
-
-        listButtons = document.querySelectorAll("#listButton");
-        listButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                document.getElementById("pageMap").style = "display:none;";
-                document.getElementById("pageBorrower").style = "";
-            });
-        });
-
-        document.getElementById("filterButtonBorrow").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pageFilter").style = "";
-        });
-
-
-         /**
-         *
-         * Listing Profile Screen (Randaldo)
-         *
-         */
-
-        messageButtons = document.querySelectorAll("#messageNow");
-        messageButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                previousContainer = e.originalTarget;
-                while(previousContainer.className != "container justify-content-center"){
-                    previousContainer = previousContainer.parentElement;
-                }
-                previousContainer.style="display:none;";
-                document.getElementById("pageChat").style = "";
-            });
-        });
-
-
-        /**
-         *
-         * Chat Screen (Randaldo)
-         *
-         */
-
-         document.getElementById("backToChatHistory").addEventListener("click", function(e) {
-            document.getElementById("pageChat").style = "display:none;";
-            document.getElementById("pageChatHistory").style = "";
-        });
-
-
-        /**
-         *
-         * Chat History Screen (Randaldo)
-         *
-         */
-
-         document.getElementById("historyRonaldoChat").addEventListener("click", function(e) {
-            document.getElementById("pageChatHistory").style = "display:none;";
-            document.getElementById("pageChat").style = "";
-        });
-
-        document.getElementById("backButtonChat").addEventListener("click", function(e) {
-            document.getElementById("pageChatHistory").style = "display:none;";
-            console.log(previousContainer);
-            previousContainer.style = "";
-
-        });
-
-    
-
-        /**
-         * 
-         * Map Screen 
-         * 
-         */
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(36.126693,-115.180642),
-                zoom:10,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-
-
-        document.getElementById("backButtonMap").addEventListener("click", function(e) {
-            document.getElementById("pageMap").style = "display:none;";
-            document.getElementById("pageSplash").style = "";
-        });
-
-        /**
-         * 
-         * Individual listings
-         * 
-         */
-        document.getElementById("sitar").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("sitarinfo").style = "";
-        });
-
-        document.getElementById("pearlDrumset").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("druminfo").style = "";
-        });
-
-        document.getElementById("grandPiano").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pianoinfo").style = "";
-        });
-
-        document.getElementById("clarinet").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("clarinetinfo").style = "";
-        });
-   
-        document.getElementById("orangeAmp").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("ampinfo").style = "";
-        });
-
-        instrButtons = document.querySelectorAll("#backButtonInstr");
-        instrButtons.forEach(element => {
-            element.addEventListener("click", function(e) {
-                previousContainer = e.originalTarget;
-                while(previousContainer.className != "container justify-content-center"){
-                    previousContainer = previousContainer.parentElement;
-                }
-                previousContainer.style="display:none;";
-                document.getElementById("pageBorrower").style="";
-            });
-        })
-  
-
-        /**
-         * 
-         * Search filter
-         * 
-         */
-        document.getElementById("backButtonf").addEventListener("click", function(e) {
-            document.getElementById("pageFilter").style = "display:none;";
-            document.getElementById("pageBorrower").style = "";
-        });
-
-        document.getElementById("saveFilterButton").addEventListener("click", function(e) {
-            document.getElementById("pageFilter").style = "display:none;";
-            document.getElementById("pageBorrower").style = "";
-        });	
-
-
-        /**
-         * 
-         * Lender Screen
-         * 
-         */
-        document.getElementById("addInstruments").addEventListener("click", function(e) {
-            document.getElementById("pageLender").style = "display:none;";
-            document.getElementById("pageAdd").style = "";
-        });
-
-
-        /**
-         * 
-         * Add instrument
-         * 
-         */
-        document.getElementById("backButtona").addEventListener("click", function(e) {
-            document.getElementById("pageLender").style = "";
-            document.getElementById("pageAdd").style = "display:none;";
-        });
-
-        document.getElementById("saveFilterButtona").addEventListener("click", function(e) {
-            document.getElementById("pageLender").style = "";
-            document.getElementById("pageAdd").style = "display:none;";
-        });
-        
-
-    </script>
+    <script src="instrumental.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1bDO_Nb-qpRr3CPQpTQqLCYxZpkUwRuE&callback=myMap"></script>
     
 </html>
