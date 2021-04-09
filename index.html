@@ -148,7 +148,7 @@
                     <!-- ROW FOR INSTRUMENT ENTRY -->
                     <div class="row text-left" style="background-color:gray; margin-top:3px;">
                         <div class="justify-content-start">
-                            <img src="guitar.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
+                            <img src="images/guitar.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
                         </div>
                         <div col class="text-left" style="margin-left:4px;">
                             <span>Guitar 1</span></br>
@@ -158,7 +158,7 @@
 
                     <div class="row text-left" style="background-color:gray; margin-top:3px;">
                         <div class="justify-content-start">
-                            <img src="drumset.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
+                            <img src="images/drumset.jpg" alt="Acoustic Guitar" style="width:50px;height:50px;">
                         </div>
                         <div col class="text-left" style="margin-left:4px;">
                             <span>Drumset 1</span></br>
@@ -273,7 +273,7 @@
                                 <div class="justify-content-center">
                                     <p>Sitar</p>
 				    
-                                    <img src="sitar.jpg" alt="Sitar" class="mx-auto d-block">
+                                    <img src="images/sitar.jpg" alt="Sitar" class="mx-auto d-block">
 			            
                                     <p>$50/hr</p>
                                 </div>
@@ -284,7 +284,7 @@
                                 <div class="justify-content-start">
                                     <p class="">Grand Piano</p>
                                     
-                                    <img src="grand_piano.jpg" alt="Grand Piano" class="mx-auto d-block">
+                                    <img src="images/grand_piano.jpg" alt="Grand Piano" class="mx-auto d-block">
                                     
                                     <p>$199/hr</p>
                                 </div>
@@ -297,7 +297,7 @@
                                 <div class="justify-content-center">
                                     <p>Drumset</p>
                                     
-                                    <img src="pearl_drumset.jpg" alt="Pearl Drumset" class="mx-auto d-block">
+                                    <img src="images/pearl_drumset.jpg" alt="Pearl Drumset" class="mx-auto d-block">
                                     
                                     <p>$99/hr</p>
                                 </div>
@@ -308,7 +308,7 @@
                                 <div class="justify-content-center">
                                     <p>Orange Amp</p>
                                     
-                                    <img src="orange_amp.jpg" alt="Orange Amplifier" class="mx-auto d-block">
+                                    <img src="images/orange_amp.jpg" alt="Orange Amplifier" class="mx-auto d-block">
                                     
                                     <p>$25/hr</p>
                                 </div>
@@ -319,7 +319,7 @@
                                 <div class="justify-content-center">
                                     <p>Clarinet</p>
                                     
-                                    <img src="clarinet.jpg" alt="Clarinet" class="mx-auto d-block">
+                                    <img src="images/clarinet.jpg" alt="Clarinet" class="mx-auto d-block">
                                     
                                     <p>$47/hr</p>
                                 </div>
@@ -330,16 +330,16 @@
             </div>
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 50px;" id="profileButton">
-                        <span class="material-icons">person</span>
+                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 50px;" id="userButton">
+                        <span class="material-icons">account_circle</span>
                     </button>
                     <button class="btn btn-primary" style="background-color:lightgray; margin-right: 5px;" id="mapButton">
                         <span class="material-icons">public</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 45px;" id="listButton">
+                    <button class="btn btn-primary" style="background-color:lightgreen; margin-right: 45px;" id="listButton">
                         <span class="material-icons">list</span>
                     </button>
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatHistoryButton">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
                         <span class="material-icons">chat</span>
                     </button>
                 </div>
@@ -349,6 +349,13 @@
 	<!-- INDIVIDUAL LISTING SCREENS -->
         <div class="container justify-content-center" id="sitarinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="content">
                     <div class="padding">
                         <div class="container">
@@ -356,7 +363,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="sitar.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/sitar.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
                                             <div>
                                                 <h2>Ronaldo</h2>
                                                 <p>Sitar</p>
@@ -376,7 +383,14 @@
             </div>
         </div>
 
-	<div class="container justify-content-center" id="pianoinfo" style="display:none;">
+	    <div class="container justify-content-center" id="pianoinfo" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
             <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="content">
                     <div class="padding">
@@ -385,7 +399,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="grand_piano.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/grand_piano.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
                                             <div>
                                                 <h2>Randaldo</h2>
                                                 <p>Grand Piano</p>
@@ -407,6 +421,13 @@
 
         <div class="container justify-content-center" id="druminfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="content">
                     <div class="padding">
                         <div class="container">
@@ -414,7 +435,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="pearl_drumset.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/pearl_drumset.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
                                             <div>
                                                 <h2>Randaldo</h2>
                                                 <p>Drumset</p>
@@ -436,6 +457,13 @@
 
         <div class="container justify-content-center" id="ampinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="content">
                     <div class="padding">
                         <div class="container">
@@ -443,7 +471,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="orange_amp.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/orange_amp.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
                                             <div>
                                                 <h2>Randaldo</h2>
                                                 <p>Orange Amp</p>
@@ -465,6 +493,13 @@
 
         <div class="container justify-content-center" id="clarinetinfo" style="display:none;">
             <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonInstr">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="content">
                     <div class="padding">
                         <div class="container">
@@ -472,7 +507,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="clarinet.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/clarinet.jpg" class="rounded-circle img-thumbnail" alt="sitar"></div>
                                             <div>
                                                 <h2>Randaldo</h2>
                                                 <p>Clarinet</p>
@@ -502,7 +537,7 @@
                                 <div class="col-lg-4">
                                     <div class="text-center card-box">
                                         <div class="member-card pt-2 pb-2">
-                                            <div class="thumb-lg member-thumb mx-auto"><img src="bronaldo.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                                            <div class="thumb-lg member-thumb mx-auto"><img src="images/bronaldo.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
                                             <div>
                                                 <h2>Randaldo</h2>
                                                 <p>Rating: 4.5<span class="material-icons">star</span><br>Location: New York</br></p>
@@ -581,6 +616,9 @@
                     <div class="padding">
                         <div class="row container d-flex justify-content-center">
                             <div class="col-md-6">
+                                <button class="btn btn-primary" style="background-color:lightgray;" id="backButton">
+                                    <span class="material-icons">arrow_back</span>
+                                </button>
                                 <button class="btn btn-primary" style="background-color:lightgray;" id="backToChatHistory">
                                     <span class="material-icons">history</span>
                                 </button>
@@ -597,7 +635,7 @@
                                                 <p>I need it for 5 days starting on June 10th.</p>
                                             </div>
                                         </div>
-                                        <div class="media media-chat"> <img class="avatar" src="bronaldo.png" alt="...">
+                                        <div class="media media-chat"> <img class="avatar" src="images/bronaldo.png" alt="...">
                                             <div class="media-body">
                                                 <p>That works for me. It's $99/day, is that okay?</p>
                                             </div>
@@ -608,7 +646,7 @@
                                                 <p>I'll be coming in by train at 10AM on June 10, is there any chance you can meet me there with the kit?</p>
                                             </div>
                                         </div>
-                                        <div class="media media-chat"> <img class="avatar" src="bronaldo.png" alt="...">
+                                        <div class="media media-chat"> <img class="avatar" src="images/bronaldo.png" alt="...">
                                             <div class="media-body">
                                                 <p>I can do that. You need everything, right?</p>
                                             </div>
@@ -618,7 +656,7 @@
                                                 <p>Yes, I need it all.</p>
                                             </div>
                                         </div>
-                                        <div class="media media-chat"> <img class="avatar" src="bronaldo.png" alt="...">
+                                        <div class="media media-chat"> <img class="avatar" src="images/bronaldo.png" alt="...">
                                             <div class="media-body">
                                                 <p>Great, i'll meet you at Grand Central at 10AM on June 10th with the kit.</p>
                                             </div>
@@ -635,7 +673,7 @@
                                             <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
                                         </div>
                                     </div>
-                                    <div class="publisher bt-1 border-light"> <img class="avatar avatar-xs" src="drumset.jpg" alt="..."> <input class="publisher-input" type="text" placeholder="Write something"> <span class="publisher-btn file-group"> <i class="fa fa-paperclip file-browser"></i> <input type="file"> </span> <a class="publisher-btn" href="#" data-abc="true"><i class="fa fa-smile"></i></a> <a class="publisher-btn text-info" href="#" data-abc="true"><i class="fa fa-paper-plane"></i></a> </div>
+                                    <div class="publisher bt-1 border-light"> <img class="avatar avatar-xs" src="images/drumset.jpg" alt="..."> <input class="publisher-input" type="text" placeholder="Write something"> <span class="publisher-btn file-group"> <i class="fa fa-paperclip file-browser"></i> <input type="file"> </span> <a class="publisher-btn" href="#" data-abc="true"><i class="fa fa-smile"></i></a> <a class="publisher-btn text-info" href="#" data-abc="true"><i class="fa fa-paper-plane"></i></a> </div>
                                 </div>
                             </div>
                         </div>
@@ -658,13 +696,19 @@
                     <div id="googleMap" style="width:100%;height:400px;"></div>
                 </div>
             </div>
-            <div class="row justify-content-center" style="margin-top:2%;">
+            <div class="row justify-content-center" style="margin-top:5px;">
                 <div class="col-md-4">
-                    <button class="btn btn-primary" style="background-color:lightgray;" id="userButton">
+                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 50px;" id="userButton">
                         <span class="material-icons">account_circle</span>
                     </button>
+                    <button class="btn btn-primary" style="background-color:lightgreen; margin-right: 5px;" id="mapButton">
+                        <span class="material-icons">public</span>
+                    </button>
+                    <button class="btn btn-primary" style="background-color:lightgray; margin-right: 45px;" id="listButton">
+                        <span class="material-icons">list</span>
+                    </button>
                     <button class="btn btn-primary" style="background-color:lightgray;" id="chatButton">
-                        <span class="material-icons">message</span>
+                        <span class="material-icons">chat</span>
                     </button>
                 </div>
             </div>
@@ -673,6 +717,13 @@
 
         <!-- CHAT HISTORY SCREEN -->
         <div class="container justify-content-center" id="pageChatHistory" style="display:none;">
+            <div class="row justify-content-center" style="margin-top:5px;">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="background-color:lightgray;" id="backButtonChat">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                </div>
+            </div>
                 <div class="container">
                     <div class="padding"></div>
                         <div class="row justify-content-center" style="margin-top:5px;">
@@ -690,7 +741,7 @@
                                     <div class="inbox_chat">
                                     <div class="chat_list active_chat" id="historyRonaldoChat">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randaldo <span class="chat_date">Mar 31, 2020</span></h5>
                                             <p>Great, i'll meet you at Grand Central at 10AM on June 10th with the kit.</p>
@@ -699,7 +750,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randaldon <span class="chat_date">Mar 02, 2020</span></h5>
                                             <p>Looking like a SNACK</p>
@@ -708,7 +759,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Ronaldihno <span class="chat_date">Feb 14, 2020</span></h5>
                                             <p>Hey, i'm just on here to make some friends.</p>
@@ -717,7 +768,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randal <span class="chat_date">Feb 01, 2020</span></h5>
                                             <p>Wait, this isn't a dating app???</p>
@@ -726,7 +777,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randal <span class="chat_date">Jan 27, 2020</span></h5>
                                             <p>Wait, this isn't a dating app???</p>
@@ -735,7 +786,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randal <span class="chat_date">Jan 12, 2020</span></h5>
                                             <p>Wait, this isn't a dating app???</p>
@@ -744,7 +795,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randal <span class="chat_date">Jan 02, 2020</span></h5>
                                             <p>Wait, this isn't a dating app???</p>
@@ -753,7 +804,7 @@
                                     </div>
                                     <div class="chat_list">
                                         <div class="chat_people">
-                                        <div class="chat_img"> <img src="bronaldo.png" alt="Bronaldo"> </div>
+                                        <div class="chat_img"> <img src="images/bronaldo.png" alt="Bronaldo"> </div>
                                         <div class="chat_ib">
                                             <h5>Randal <span class="chat_date">Dec 25, 2020</span></h5>
                                             <p>Wait, this isn't a dating app???</p>
@@ -849,9 +900,16 @@
         });
 
         // Event Listener for chat history
-        document.getElementById("chatButton").addEventListener("click", function(e) {
-            document.getElementById("pageSplash").style = "display:none;";
-            document.getElementById("pageChatHistory").style = "";
+        chatButtons = document.querySelectorAll("#chatButton");
+        chatButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                previousContainer = e.originalTarget;
+                while(previousContainer.className != "container justify-content-center"){
+                    previousContainer = previousContainer.parentElement;
+                }
+                previousContainer.style="display:none;";
+                document.getElementById("pageChatHistory").style="";
+            });
         });
 
 
@@ -894,19 +952,30 @@
             document.getElementById("pageSplash").style = "";
         });
 
-        document.getElementById("profileButton").addEventListener("click", function(e) {
+        /**document.getElementById("profileButton").addEventListener("click", function(e) {
             document.getElementById("pageBorrower").style = "display:none;";
             document.getElementById("pageListingProfile").style = "";
-        });
+        });*/
 
-        document.getElementById("chatHistoryButton").addEventListener("click", function(e) {
+        /**document.getElementById("chatHistoryButton").addEventListener("click", function(e) {
             document.getElementById("pageBorrower").style = "display:none;";
             document.getElementById("pageChatHistory").style = "";
+        });*/
+
+        mapButtons = document.querySelectorAll("#mapButton");
+        mapButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                document.getElementById("pageBorrower").style = "display:none;";
+                document.getElementById("pageMap").style = "";
+            });
         });
 
-        document.getElementById("mapButton").addEventListener("click", function(e) {
-            document.getElementById("pageBorrower").style = "display:none;";
-            document.getElementById("pageMap").style = "";
+        listButtons = document.querySelectorAll("#listButton");
+        listButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                document.getElementById("pageMap").style = "display:none;";
+                document.getElementById("pageBorrower").style = "";
+            });
         });
 
         document.getElementById("filterButtonBorrow").addEventListener("click", function(e) {
@@ -921,14 +990,16 @@
          *
          */
 
-        document.getElementById("messageNow").addEventListener("click", function(e) {
-            document.getElementById("pageListingProfile").style = "display:none;";
-            document.getElementById("sitarinfo").style = "display:none;";
-            document.getElementById("pianoinfo").style = "display:none;";
-	    document.getElementById("druminfo").style = "display:none;";
-	    document.getElementById("clarinetinfo").style = "display:none;";
-            document.getElementById("ampinfo").style = "display:none;";
-            document.getElementById("pageChat").style = "";
+        messageButtons = document.querySelectorAll("#messageNow");
+        messageButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                previousContainer = e.originalTarget;
+                while(previousContainer.className != "container justify-content-center"){
+                    previousContainer = previousContainer.parentElement;
+                }
+                previousContainer.style="display:none;";
+                document.getElementById("pageChat").style = "";
+            });
         });
 
 
@@ -953,6 +1024,13 @@
          document.getElementById("historyRonaldoChat").addEventListener("click", function(e) {
             document.getElementById("pageChatHistory").style = "display:none;";
             document.getElementById("pageChat").style = "";
+        });
+
+        document.getElementById("backButtonChat").addEventListener("click", function(e) {
+            document.getElementById("pageChatHistory").style = "display:none;";
+            console.log(previousContainer);
+            previousContainer.style = "";
+
         });
 
     
@@ -1005,6 +1083,18 @@
             document.getElementById("pageBorrower").style = "display:none;";
             document.getElementById("ampinfo").style = "";
         });
+
+        instrButtons = document.querySelectorAll("#backButtonInstr");
+        instrButtons.forEach(element => {
+            element.addEventListener("click", function(e) {
+                previousContainer = e.originalTarget;
+                while(previousContainer.className != "container justify-content-center"){
+                    previousContainer = previousContainer.parentElement;
+                }
+                previousContainer.style="display:none;";
+                document.getElementById("pageBorrower").style="";
+            });
+        })
   
 
         /**
